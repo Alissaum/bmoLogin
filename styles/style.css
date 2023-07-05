@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+:root {
+  --azul-claro: #25a6d9;
+  --verde-escuro: #55a603;
+  --verde-medio: #4abba0;
+  --verde-claro: #b6ffc7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  background-color: var(--azul-claro);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+main h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+main h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+
+.bmo {
+  background-color: var(--verde-medio);
+  width: 50vw;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid #111;
+  border-radius: 20px;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.tela {
+  background-color: var(--verde-claro);
+  width: 40vw;
+  height: 54vh;
+  border-radius: 20px;
+  border: 4px solid #111;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.caixa-olhos {
+  display: flex;
+  width: 38vw;
+  height: 20vh;
+  justify-content: space-around;
+}
+
+.olhos {
+  height: 70px;
+  width: 50px;
+  background-color: #111;
+  border-radius: 48%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+form input {
+  width: 300px;
+  height: 40px;
+  margin-bottom: 10px;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 2px solid #111;
+}
+
+form input:focus {
+  outline-color: var(--verde-escuro);
+}
+
+form input::placeholder {
+  color: #111;
+}
+
+.botaoLogin {
+  text-align: center;
+  padding: 0.8rem 3rem;
+  margin-top: 1rem;
+  background-color: var(--verde-escuro);
+  font-size: 32px;
+  border-radius: 6px;
+  color: var(--verde-claro);
+  box-shadow: 0px 4px 4px 2px #111;
+}
+
+.botaoLogin:hover {
+  cursor: pointer;
+}
